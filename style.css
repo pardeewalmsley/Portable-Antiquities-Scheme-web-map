@@ -1,0 +1,116 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+#mapid {
+  height: 100vh;
+  width: 100%;
+  float: right;
+  z-index: 0;
+}
+
+/* Div where introductory paragraph displayed when page first opened */
+
+#about {
+  height: 500px;
+  width: 250px;
+  float: left;
+  margin-top: 117px;
+  margin-left: 60px;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 1;
+  display: block;
+}
+
+#about p {
+  padding: 15px;
+  margin-top: 70px;
+  float: left;
+  font-family: 'Bookman Old Style', 'Times New Roman', serif;
+  font-size: 12pt;
+  color: #662506;
+  line-height: 1.5;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Div where county information displayed when click event triggered */
+
+#displayCase {
+  height: 500px;
+  width: 250px;
+  float: left;
+  margin-top: 117px;
+  margin-left: 60px;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 1;
+  display: block;
+}
+
+#displayCase p {
+  padding: 15px;
+  margin-top: 70px;
+  float: left;
+  font-family: 'Bookman Old Style', 'Times New Roman', serif;
+  font-size: 12pt;
+  color: #662506;
+  line-height: 1.5;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Title div */
+
+#title {
+  height: 50px;
+  width: 230px;
+  float: left;
+  margin-left: 60px;
+  margin-top: 25px;
+  padding: 5px;
+  text-align: left;
+  font-size: 32pt;
+  font-family: 'Palatino', 'Times New Roman', serif;
+  position: absolute;
+  color: #662506;
+  z-index: 1;
+}
+
+#title a {
+  color: #662506;
+  text-decoration: none;
+}
+
+#title a:hover {
+  color: #993404;
+}
+
+/* Custom leaflet popup */
+
+.leaflet-popup-tip,
+.leaflet-popup-content-wrapper {
+    width: auto;
+    background: rgba(0,0,0,0.5);
+    font-family: 'Palatino', 'Times New Roman', serif;
+    font-size: 14pt;
+}
+
+/* Legend */
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
